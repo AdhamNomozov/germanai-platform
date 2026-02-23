@@ -63,7 +63,7 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
 
             {/* Logo */}
             <motion.a
-              href="#"
+              href="public/images/logo"
               className="flex items-center gap-2 select-none"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
