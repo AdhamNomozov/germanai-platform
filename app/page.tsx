@@ -1,101 +1,87 @@
-import Image from "next/image";
+"use client"
+
+import { useState } from "react"
+import { Navbar, Footer } from "@/src/components/layout"
+import {
+  Hero, Features, AITest, Courses,
+  Certificate, Roadmap, Pricing, FAQ, Contact,
+} from "@/src/components/sections"
+import { WaitlistModal, CourseModal, PricingModal } from "@/src/components/modals"
+import type { CourseData } from "@/src/components/modals/CourseModal"
+import type { PlanData }   from "@/src/components/modals/PricingModal"
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  /* ─── Waitlist modal ───────────────────────────────────── */
+  const [waitlist, setWaitlist] = useState<{
+    isOpen: boolean
+    source: string
+    title?: string
+    subtitle?: string
+  }>({ isOpen: false, source: "" })
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+  const openWaitlist = (source: string, title?: string, subtitle?: string) =>
+    setWaitlist({ isOpen: true, source, title, subtitle })
+
+  const closeWaitlist = () =>
+    setWaitlist((s) => ({ ...s, isOpen: false }))
+
+  /* ─── Course modal ─────────────────────────────────────── */
+  const [courseModal, setCourseModal] = useState<{
+    isOpen: boolean
+    course: CourseData | null
+  }>({ isOpen: false, course: null })
+
+  const openCourseModal = (course: CourseData) =>
+    setCourseModal({ isOpen: true, course })
+
+  const closeCourseModal = () =>
+    setCourseModal((s) => ({ ...s, isOpen: false }))
+
+  /* ─── Pricing modal ────────────────────────────────────── */
+  const [pricingModal, setPricingModal] = useState<{
+    isOpen: boolean
+    plan: PlanData | null
+  }>({ isOpen: false, plan: null })
+
+  const openPricingModal = (plan: PlanData) =>
+    setPricingModal({ isOpen: true, plan })
+
+  const closePricingModal = () =>
+    setPricingModal((s) => ({ ...s, isOpen: false }))
+
+  /* ─── Render ───────────────────────────────────────────── */
+  return (
+    <main className="bg-[#0F1117] min-h-screen">
+      <Navbar onQuickTest={() => openWaitlist("navbar-quick-test", "AI Test sinab ko'ring")} />
+      <Hero    onStartTest={() => openWaitlist("hero-start-test", "AI Test sinab ko'ring")} />
+      <Features />
+      <AITest  onStartTest={() => openWaitlist("aitest-start", "AI Test sinab ko'ring")} />
+      <Courses onSelectCourse={openCourseModal} />
+      <Certificate />
+      <Roadmap />
+      <Pricing onSelectPlan={openPricingModal} />
+      <FAQ />
+      <Contact />
+      <Footer />
+
+      {/* ─── Modals ────────────────────────────────────────── */}
+      <WaitlistModal
+        isOpen={waitlist.isOpen}
+        onClose={closeWaitlist}
+        source={waitlist.source}
+        title={waitlist.title}
+        subtitle={waitlist.subtitle}
+      />
+      <CourseModal
+        isOpen={courseModal.isOpen}
+        onClose={closeCourseModal}
+        course={courseModal.course}
+      />
+      <PricingModal
+        isOpen={pricingModal.isOpen}
+        onClose={closePricingModal}
+        plan={pricingModal.plan}
+      />
+    </main>
+  )
 }

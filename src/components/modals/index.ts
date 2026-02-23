@@ -1,0 +1,5 @@
+export { default as WaitlistModal } from "./WaitlistModal"
+export { default as CourseModal }   from "./CourseModal"
+export type { CourseData }          from "./CourseModal"
+export { default as PricingModal }  from "./PricingModal"
+export type { PlanData }            from "./PricingModal"
