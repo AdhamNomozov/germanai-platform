@@ -14,8 +14,8 @@ const CONTACT_ITEMS = [
   {
     icon:  Phone,
     label: "Telefon",
-    value: "+998 71 200-00-00",
-    href:  "tel:+998712000000",
+    value: "+998 99 746-22-00",
+    href:  "tel:+998997462200",
   },
   {
     icon:  Mail,
@@ -26,7 +26,7 @@ const CONTACT_ITEMS = [
   {
     icon:  MapPin,
     label: "Manzil",
-    value: "Toshkent, Mirzo Ulugbek, 38",
+    value: "Termiz shahri,
     href:  "#",
   },
 ]
