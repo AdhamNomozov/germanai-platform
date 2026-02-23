@@ -26,7 +26,7 @@ const CONTACT_ITEMS = [
   {
     icon:  MapPin,
     label: "Manzil",
-    value: "Termiz shahri,
+    value: "Termiz shahri",
     href:  "#",
   },
 ]
