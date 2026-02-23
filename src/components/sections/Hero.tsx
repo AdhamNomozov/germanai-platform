@@ -15,11 +15,11 @@ const STATS = [
   { value: "5,000+",  label: "AI savollar",        icon: Brain    },
   { value: "92%",     label: "Muvaffaqiyat darajasi", icon: TrendingUp },
   { value: "24/7",    label: "AI yordam",           icon: MessageSquare },
-  { value: "8,400+",  label: "O'quvchilar",         icon: Users    },
+  { value: "1,400+",  label: "O'quvchilar",         icon: Users    },
 ]
 
 const FEATURES = [
-  "Mock imtihon simulatsiyasi",
+  "Mock imtihoni hisoboti",
   "Shaxsiy AI mentor",
   "Grammatika tahlili",
 ]
@@ -313,7 +313,7 @@ export default function Hero({ onStartTest }: HeroProps) {
               className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed max-w-lg"
             >
               Mock imtihonlar, shaxsiy AI kurslar va 24/7 aqlli mentor —
-              barchasi bir joyda. <span className="text-primary-400 font-medium">A1 dan C2 gacha</span> barcha darajalar uchun.
+              barchasi bir joyda. <span className="text-primary-400 font-medium">A1 dan B2 gacha</span> barcha darajalar uchun.
             </motion.p>
 
             {/* Feature list */}
