@@ -425,7 +425,7 @@ export default function Hero({ onStartTest }: HeroProps) {
               )}
             >
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              Hozir 342 o&apos;quvchi online
+              Hozir 142 o&apos;quvchi online
             </motion.div>
           </div>
         </div>
