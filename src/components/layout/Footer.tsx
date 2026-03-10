@@ -6,7 +6,7 @@ import { cn } from "@/src/lib/utils"
 
 const FOOTER_LINKS = {
   product: {
-    label: "Mahsulot",
+    label: "Xizmatlar",
     links: [
       { label: "Kurslar",      href: "#courses"     },
       { label: "Narxlar",      href: "#pricing"     },
