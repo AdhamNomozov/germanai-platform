@@ -10,7 +10,7 @@ import { cn } from "@/src/lib/utils"
 const FAQS = [
   {
     q: "GermanGo nima va qanday ishlaydi?",
-    a: "GermanGo — sun&apos;iy intellekt asosida qurilgan nemis tili o'qitish platformasi. Tizim sizning darajangizni aniqlab, shaxsiy o&apos;quv reja tuzadi, interaktiv darslar, mock imtihonlar va real-time AI feedback bilan o&apos;rganishni tezlashtiradi.",
+    a: "GermanGo — AI asosida qurilgan nemis tili o'qitish platformasi. Tizim sizning darajangizni aniqlab, shaxsiy oquv reja tuzadi, interaktiv darslar, mock imtihonlar va real-time AI feedback bilan organishni tezlashtiradi.",
   },
   {
     q: "Test natijalarini qayerda ko'raman?",
@@ -18,11 +18,11 @@ const FAQS = [
   },
   {
     q: "Kurslarga qanday yozilaman?",
-    a: "\"Kursni tanlash\" tugmasini bosib, to'lov amalga oshirilgach, kursga kirish darhol faollashadi. Barcha materiallar, darslar va barcha mashqlar bir zumda mavjud bo&apos;ladi.",
+    a: "\"Kursni tanlash\" tugmasini bosib, to'lov amalga oshirilgach, kursga kirish darhol faollashadi. Barcha materiallar, darslar va barcha mashqlar bir zumda ochiladi.",
   },
   {
     q: "To'lov usullari qanday?",
-    a: "Payme, Click, Uzcard, Visa/MasterCard orqali to'lash mumkin. Oylik va yillik (20% chegirma) obuna rejalari mavjud. Korporativ hisob-varaq ham qabul qilinadi.",
+    a: "Payme, Click, Uzcard yoki xohlagan ilova orqali to'lash mumkin. Oylik va yillik (10% chegirma) obuna rejalari mavjud. Korporativ hisob-varaq ham qabul qilinadi.",
   },
   {
     q: "Sertifikatni qayerda tan olishadi?",
