@@ -167,7 +167,7 @@ export default function Pricing({ onSelectPlan }: PricingProps) {
           transition={{ delay: 0.7, duration: 0.5 }}
           className="text-center text-gray-600 text-sm mt-8"
         >
-          Barcha rejalar 7 kunlik bepul sinov davri bilan. Karta talab qilinmaydi.
+          Barcha rejalar 7 kunlik bepul sinov davri bilan.
         </motion.p>
       </div>
     </section>
