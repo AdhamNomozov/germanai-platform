@@ -117,7 +117,7 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
               <motion.a
-                href="/platform"
+                href="https://edu.germango.uz/login"
                 className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
                 whileHover={{ x: 2 }}
               >
@@ -217,7 +217,7 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
                   variant="ghost"
                   size="lg"
                   fullWidth
-                  onClick={() => { setMenuOpen(false); window.location.href = "/platform" }}
+                  onClick={() => { setMenuOpen(false); window.location.href = "https://edu.germango.uz/login" }}
                 >
                   Kirish
                 </Button>

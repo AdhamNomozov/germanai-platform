@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     canonical: "https://germango.uz",
   },
   verification: {
-    google: "google-site-verification-token",
+    google: "QKM34_47ryo-Hl_08NlGKdm6slFsBb5rBWxYZTUzrys",
     yandex: "yandex-verification-token",
   },
 }
