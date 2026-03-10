@@ -13,8 +13,8 @@ const COURSES: (CourseData & { popular?: boolean })[] = [
   {
     level:    "A1",
     title:    "Boshlang'ich muloqot va kundalik vaziyatlar",
-    duration: "6 hafta",
-    hours:    "3 soat/hafta",
+    duration: "2 oy",
+    hours:    "6 soat/hafta",
     features: [
       "Asosiy grammatika",
       "Kundalik so'zlashuv",
@@ -25,8 +25,8 @@ const COURSES: (CourseData & { popular?: boolean })[] = [
   {
     level:    "A2",
     title:    "Amaliy til ko'nikmalari va so'z boyligini kengaytirish",
-    duration: "8 hafta",
-    hours:    "4 soat/hafta",
+    duration: "2 oy",
+    hours:    "7 soat/hafta",
     features: [
       "Kengaytirilgan grammatika",
       "Mavzuviy lug'at",
@@ -36,9 +36,9 @@ const COURSES: (CourseData & { popular?: boolean })[] = [
   },
   {
     level:    "B1",
-    title:    "TestDaF va Goethe imtihoniga tayyorgarlik",
-    duration: "10 hafta",
-    hours:    "5 soat/hafta",
+    title:    "Goethe, Telc, TestDaF imtihoniga tayyorgarlik",
+    duration: "3 oy",
+    hours:    "8 soat/hafta",
     features: [
       "Imtihon formati",
       "Mock testlar",
@@ -50,8 +50,8 @@ const COURSES: (CourseData & { popular?: boolean })[] = [
   {
     level:    "B2",
     title:    "Akademik yozuv va professional muloqot",
-    duration: "12 hafta",
-    hours:    "5 soat/hafta",
+    duration: "2,5 oy",
+    hours:    "8 soat/hafta",
     features: [
       "Akademik yozuv",
       "Professional nemis tili",
@@ -95,12 +95,12 @@ export default function Courses({ onSelectCourse }: CoursesProps) {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/25 text-primary-300 text-sm font-medium mb-4">
             <BookOpen size={13} />
-            AI Kurslar
+            Kurslar
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
             A1 dan B2 gacha{" "}
             <span className="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">
-              AI kurslar
+              Online kurslar
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
