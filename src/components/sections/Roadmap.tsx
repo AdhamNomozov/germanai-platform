@@ -33,7 +33,7 @@ const STEPS = [
     color: "from-primary-400 to-primary-600",
     ring:  "ring-primary-500/30",
     label: "Reja",
-    desc:  "Tizim siz uchun shaxsiy yo&apos;l xaritasi yaratadi",
+    desc:  "Tizim siz uchun shaxsiy yol xaritasi yaratadi",
     sub:   "Avtomatik",
   },
   {
