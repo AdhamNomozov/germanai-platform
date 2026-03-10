@@ -9,8 +9,8 @@ import { cn } from "@/src/lib/utils"
 import { Button } from "@/src/components/ui/Button"
 
 const BENEFITS = [
-  "Darajangizni aniq aniqlash (A1–C2)",
-  "Zaifliklarga moslashgan dars reja",
+  "Bilim darajangizni aniqlash (A1–B2)",
+  "Bilmagan mavzularingizga moslashgan dars reja",
   "PDF hisobot — 5 daqiqada tayyor",
 ]
 
@@ -59,7 +59,7 @@ export default function AITest({ onStartTest }: AITestProps) {
             </h2>
 
             <p className="text-gray-400 text-lg leading-relaxed">
-              Adaptiv algoritmimiz 5 daqiqa ichida sizning nemis tili darajangizni aniq belgilaydi
+              Platformamiz 5 daqiqa ichida sizning nemis tili darajangizni aniq belgilaydi
               va shaxsiy yo&apos;l xaritasi tayyorlaydi.
             </p>
 
@@ -166,7 +166,7 @@ export default function AITest({ onStartTest }: AITestProps) {
                   <p className="text-sm text-gray-300 leading-relaxed">
                     {done && answer
                       ? `"${answer}" — yaxshi urinish! "Ich heiße [ism]" yoki "Mein Name ist [ism]" to'liq javob bo'ladi.`
-                      : "Javobingizni yozib, natijani ko&apos;ring…"}
+                      : "Javobingizni yozib, natijani tahlil qiling…"}
                   </p>
                 </motion.div>
 
