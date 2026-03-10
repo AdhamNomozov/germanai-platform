@@ -56,7 +56,7 @@ export default function Footer() {
 
             {/* Tagline */}
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs">
-              AI yordamida nemis tili o&apos;rgatish platformasi — A1 dan B2 gacha.
+              AI yordamida online nemis tili o&apos;rgatish platformasi — A1 dan B2 gacha.
             </p>
 
             {/* German flag */}
