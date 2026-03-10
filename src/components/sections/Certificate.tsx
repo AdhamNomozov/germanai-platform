@@ -52,12 +52,12 @@ export default function Certificate() {
             <div>
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/25 text-primary-300 text-sm font-medium mb-4">
                 <Award size={13} />
-                Yutuqlar
+                Sertifikat
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
                 O&apos;quv natijalari va{" "}
                 <span className="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">
-                  Yutuq sertifikati
+                  sertifikat
                 </span>
               </h2>
             </div>
@@ -116,7 +116,7 @@ export default function Certificate() {
                 <p className="text-xs font-semibold tracking-[0.25em] uppercase text-primary-400 mb-1">
                   GermanGo Platform
                 </p>
-                <h3 className="text-2xl font-black text-white tracking-tight">YUTUQ SERTIFIKATI</h3>
+                <h3 className="text-2xl font-black text-white tracking-tight">SERTIFIKAT</h3>
                 <p className="text-xs text-gray-500 mt-0.5">Certificate of Achievement</p>
               </div>
 
