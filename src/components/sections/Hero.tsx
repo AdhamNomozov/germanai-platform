@@ -402,7 +402,7 @@ export default function Hero({ onStartTest }: HeroProps) {
                     <Star key={i} size={10} className="text-primary-400 fill-primary-400" />
                   ))}
                 </div>
-                <p className="text-[10px] text-gray-400 mt-0.5">8,400+ o&apos;quvchi</p>
+                <p className="text-[10px] text-gray-400 mt-0.5">1,400+ o&apos;quvchi</p>
               </div>
             </motion.div>
 
