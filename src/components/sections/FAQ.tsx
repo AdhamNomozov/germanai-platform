@@ -8,8 +8,8 @@ import { cn } from "@/src/lib/utils"
 
 const FAQS = [
   {
-    q: "GermanAI nima va qanday ishlaydi?",
-    a: "GermanAI — sun'iy intellekt asosida qurilgan nemis tili o'qitish platformasi. Tizim sizning darajangizni aniqlab, shaxsiy o'quv reja tuzadi, interaktiv darslar, mock imtihonlar va real-time AI feedback bilan o'rganishni tezlashtiradi.",
+    q: "GermanGo nima va qanday ishlaydi?",
+    a: "GermanGo — sun'iy intellekt asosida qurilgan nemis tili o'qitish platformasi. Tizim sizning darajangizni aniqlab, shaxsiy o'quv reja tuzadi, interaktiv darslar, mock imtihonlar va real-time AI feedback bilan o'rganishni tezlashtiradi.",
   },
   {
     q: "AI test natijalarini qayerda ko'raman?",
@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: "Sertifikatni qayerda tan olishadi?",
-    a: "GermanAI sertifikati Germaniya hamkor tashkilotlari tomonidan tan olinadi. Bundan tashqari, Goethe-Institut va TestDaF kabi rasmiy imtihonlarga tayyorgarlik ko'rsatadi — bu sertifikatlar butun dunyo bo'ylab qabul qilinadi.",
+    a: "GermanGo sertifikati Germaniya hamkor tashkilotlari tomonidan tan olinadi. Bundan tashqari, Goethe-Institut va TestDaF kabi rasmiy imtihonlarga tayyorgarlik ko'rsatadi — bu sertifikatlar butun dunyo bo'ylab qabul qilinadi.",
   },
 ]
 
@@ -169,11 +169,10 @@ export default function FAQ() {
               </div>
               <div>
                 <h3 className="text-base font-bold text-white mb-1">
-                  Boshqa savollaringiz bormi?
+                  Ariza qoldirishni xohlaysizmi?
                 </h3>
                 <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
-                  Telegram botimiz 24/7 javob beradi va mutaxassislarimiz
-                  siz bilan bog&apos;lanadi.
+                  Mutaxassislarimiz 24 soat ichida siz bilan bog&apos;lanadi.
                 </p>
               </div>
             </div>
@@ -181,7 +180,7 @@ export default function FAQ() {
             {/* Right — button */}
             <motion.button
               type="button"
-              onClick={() => window.open("https://t.me/germanai_bot", "_blank")}
+              onClick={() => window.open("/register", "_blank")}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className={cn(
@@ -195,7 +194,7 @@ export default function FAQ() {
               )}
             >
               <Send size={16} />
-              Telegram bot
+              Ariza qoldirish
               <ArrowRight size={14} className="ml-0.5" />
             </motion.button>
           </div>

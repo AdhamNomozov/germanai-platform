@@ -43,8 +43,7 @@ export default function PricingModal({ isOpen, onClose, plan }: PricingModalProp
     e.preventDefault()
     if (!isValid || !plan) return
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 1000))
-    console.log({ name, phone, plan: plan.name })
+    await fetch("/api/leads", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify({ name, phone: "+998"+phone, source: "Tarif: " + (plan?.name || "") }) })
     setLoading(false)
     setSent(true)
   }
@@ -74,12 +73,12 @@ export default function PricingModal({ isOpen, onClose, plan }: PricingModalProp
             </p>
           </div>
           <a
-            href="https://t.me/germanai_bot"
+            href="/register"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-blue-400 hover:text-blue-300 transition-colors"
           >
-            Savollar uchun: @germanai_bot
+            
           </a>
           <button
             onClick={handleClose}

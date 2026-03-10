@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { useEffect, useRef, useState } from "react"
@@ -12,14 +13,14 @@ import { Button } from "@/src/components/ui/Button"
 
 /* ─── Data ───────────────────────────────────────────────── */
 const STATS = [
-  { value: "5,000+",  label: "AI savollar",        icon: Brain    },
-  { value: "92%",     label: "Muvaffaqiyat darajasi", icon: TrendingUp },
+  { value: "5,000+",  label: "Mashq savollari",     icon: Brain    },
+  { value: "92%",     label: "O'quvchilar muvaffaqiyati", icon: TrendingUp },
   { value: "24/7",    label: "AI yordam",           icon: MessageSquare },
   { value: "1,400+",  label: "O'quvchilar",         icon: Users    },
 ]
 
 const FEATURES = [
-  "Mock imtihoni hisoboti",
+  "Jonli darslar + kunlik mashqlar",
   "Shaxsiy AI mentor",
   "Grammatika tahlili",
 ]
@@ -293,15 +294,11 @@ export default function Hero({ onStartTest }: HeroProps) {
               className="flex flex-col gap-1"
             >
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]">
-                <span className="text-white">Nemis tili</span>
-                <br />
-                <span className="text-white">imtihonlariga</span>
+                <span className="text-white">Nemis tili imtihonlariga</span>
                 <br />
                 <span className="bg-gradient-to-r from-primary-400 via-primary-300 to-primary-500 bg-clip-text text-transparent">
-                  AI bilan
+                  onlayn tayyorlaning
                 </span>
-                <br />
-                <span className="text-white">tayyorlaning</span>
               </h1>
             </motion.div>
 
@@ -312,8 +309,7 @@ export default function Hero({ onStartTest }: HeroProps) {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="text-gray-400 text-sm sm:text-base lg:text-lg leading-relaxed max-w-lg"
             >
-              Mock imtihonlar, shaxsiy AI kurslar va 24/7 aqlli mentor —
-              barchasi bir joyda. <span className="text-primary-400 font-medium">A1 dan B2 gacha</span> barcha darajalar uchun.
+              Tajribali o'qituvchilar, sun'iy intellekt yordamchisi va kunlik mashqlar — <span className="text-primary-400 font-medium">A1 dan B2 gacha</span> barcha darajalar uchun.
             </motion.p>
 
             {/* Feature list */}
@@ -346,19 +342,19 @@ export default function Hero({ onStartTest }: HeroProps) {
                   className="shadow-glow-gold w-full sm:w-auto"
                   onClick={onStartTest}
                 >
-                  5 daqiqada AI test
+                  Bepul sinov darsi
                 </Button>
               </motion.div>
 
               <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
-                <Link href="/platform" className="block">
+                <Link href="/register" className="block">
                   <Button
                     variant="outline"
                     size="lg"
                     rightIcon={<ArrowRight size={16} />}
                     fullWidth
                   >
-                    Platformaga o&apos;tish
+                    Ro'yxatdan o'tish
                   </Button>
                 </Link>
               </motion.div>

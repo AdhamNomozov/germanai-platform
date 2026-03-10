@@ -11,16 +11,20 @@ const inter = Inter({
 
 /* ─── Metadata ───────────────────────────────────────────── */
 export const metadata: Metadata = {
-  title:       "GermanAI — Nemis tili imtihonlariga AI bilan tayyorlaning",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
+  title:       "GermanGo — Nemis tili imtihonlariga AI bilan tayyorlaning",
   description:
     "AI mock imtihonlar, shaxsiy kurslar va 24/7 aqlli mentor bilan nemis tilini o'rganing. A1 dan C2 gacha barcha darajalar uchun.",
   keywords: [
     "nemis tili", "german tili", "deutsch lernen", "ai tutor",
     "mock imtihon", "TestDaF", "Goethe", "A1", "B2", "C1",
   ],
-  authors: [{ name: "GermanAI" }],
+  authors: [{ name: "GermanGo" }],
   openGraph: {
-    title:       "GermanAI — Nemis tili imtihonlariga AI bilan tayyorlaning",
+    title:       "GermanGo — Nemis tili imtihonlariga AI bilan tayyorlaning",
     description: "AI mock imtihonlar, shaxsiy kurslar va 24/7 aqlli mentor.",
     type:        "website",
     locale:      "uz_UZ",

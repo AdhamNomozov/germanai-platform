@@ -53,8 +53,13 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", phone: "", goal: "" })
   const [sent, setSent] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    await fetch("/api/leads", {
+      method: "POST",
+      headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({ name: form.name, phone: form.phone, source: "Bog'lanish formasi: " + form.goal })
+    })
     setSent(true)
   }
 
@@ -77,7 +82,7 @@ export default function Contact() {
             Bog&apos;lanish
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
-            GermanAI bilan{" "}
+            GermanGo bilan{" "}
             <span className="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">
               bog&apos;laning
             </span>

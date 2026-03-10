@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { useState, useEffect } from "react"
@@ -63,7 +65,7 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
 
             {/* Logo */}
             <motion.a
-              href="public/images/logo"
+              href="/"
               className="flex items-center gap-2 select-none"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
@@ -73,7 +75,7 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
               </span>
               <span className="text-white font-bold text-lg tracking-tight">
                 German
-                <span className="text-primary-400">AI</span>
+                <span className="text-primary-400">Go</span>
               </span>
               {/* Live dot */}
               <span className="hidden sm:flex items-center gap-1 ml-1">
@@ -128,11 +130,10 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
                 <Button
                   variant="primary"
                   size="md"
-                  leftIcon={<Zap size={14} />}
-                  className="shadow-glow-gold pulse-animation"
-                  onClick={() => onQuickTest?.()}
+                  className="shadow-glow-gold"
+                  onClick={() => window.location.href="/register"}
                 >
-                  AI Quick Test
+                  Ro&apos;yxatdan o&apos;tish
                 </Button>
               </motion.div>
             </div>
@@ -174,7 +175,7 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
               {/* Drawer header */}
               <div className="flex items-center justify-between px-6 h-16 border-b border-white/8">
                 <span className="text-white font-bold text-base">
-                  German<span className="text-primary-400">AI</span>
+                  German<span className="text-primary-400">Go</span>
                 </span>
                 <button
                   onClick={() => setMenuOpen(false)}
@@ -207,11 +208,10 @@ export default function Navbar({ onQuickTest }: NavbarProps) {
                 <Button
                   variant="primary"
                   size="lg"
-                  leftIcon={<Zap size={16} />}
                   fullWidth
-                  onClick={() => { setMenuOpen(false); onQuickTest?.() }}
+                  onClick={() => { setMenuOpen(false); window.location.href = '/register' }}
                 >
-                  AI Quick Test
+                  Ro&apos;yxatdan o&apos;tish
                 </Button>
                 <Button
                   variant="ghost"

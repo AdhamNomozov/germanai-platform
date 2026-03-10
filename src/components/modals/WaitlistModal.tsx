@@ -43,8 +43,7 @@ export default function WaitlistModal({
     e.preventDefault()
     if (!isValid) return
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 1000))
-    console.log({ name, phone, source })
+    await fetch("/api/leads", { method: "POST", headers: {"Content-Type":"application/json"}, body: JSON.stringify({ name, phone: "+998"+phone, source }) })
     setLoading(false)
     setSent(true)
   }
@@ -74,12 +73,12 @@ export default function WaitlistModal({
           </div>
 
           <a
-            href="https://t.me/germanai_bot"
+            href="/register"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-blue-400 hover:text-blue-300 transition-colors"
           >
-            Savollar uchun: @germanai_bot
+            
           </a>
 
           <button

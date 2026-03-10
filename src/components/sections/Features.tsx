@@ -74,7 +74,7 @@ export default function Features() {
             Yo&apos;nalishlar
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
-            GermanAI qanday{" "}
+            GermanGo qanday{" "}
             <span className="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">
               yordam beradi?
             </span>

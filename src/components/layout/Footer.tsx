@@ -50,7 +50,7 @@ export default function Footer() {
                 <span className="text-secondary-900 font-black">G</span>
               </span>
               <span className="text-white font-bold text-xl tracking-tight">
-                German<span className="text-primary-400">AI</span>
+                German<span className="text-primary-400">Go</span>
               </span>
             </div>
 
@@ -140,7 +140,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-600">
-            © 2026 GermanAI. Barcha huquqlar himoyalangan.
+            © 2026 GermanGo. Barcha huquqlar himoyalangan.
           </p>
           <div className="flex items-center gap-4 text-xs text-gray-600">
             <a href="#" className="hover:text-gray-400 transition-colors">Maxfiylik siyosati</a>

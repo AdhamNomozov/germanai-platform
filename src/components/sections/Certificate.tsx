@@ -114,7 +114,7 @@ export default function Certificate() {
               {/* Header */}
               <div className="text-center mb-6">
                 <p className="text-xs font-semibold tracking-[0.25em] uppercase text-primary-400 mb-1">
-                  GermanAI Platform
+                  GermanGo Platform
                 </p>
                 <h3 className="text-2xl font-black text-white tracking-tight">YUTUQ SERTIFIKATI</h3>
                 <p className="text-xs text-gray-500 mt-0.5">Certificate of Achievement</p>
@@ -155,7 +155,7 @@ export default function Certificate() {
                 {/* Signature */}
                 <div className="text-right">
                   <div className="text-primary-400 font-black text-xl italic mb-0.5" style={{ fontFamily: "Georgia, serif" }}>
-                    GermanAI
+                    GermanGo
                   </div>
                   <p className="text-xs text-gray-600">Direktorning imzosi</p>
                   <div className="flex items-center gap-1 mt-1 justify-end">
