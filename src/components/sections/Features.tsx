@@ -47,7 +47,7 @@ const FEATURES = [
     tag:      "Hayot yo'nalishi",
     title:    "Konsalting",
     subtitle: "Shaxsiy maslahat",
-    desc:     "Vizalar, o'qish va Germaniyada ish imkoniyatlari bo'yicha shaxsiy maslahatlar — maqsadingizga eng qisqa yo&apos;l.",
+    desc:     "Vizalar, o'qish va Germaniyada ish imkoniyatlari bo'yicha shaxsiy maslahatlar — maqsadingizga eng qisqa yol.",
     bullets:  ["Visa va emigratsiya", "Nemis universitetlari", "Mehnat bozori tahlili"],
     scrollId: "contact",
   },
