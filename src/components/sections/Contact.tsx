@@ -89,7 +89,7 @@ export default function Contact() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            Savollaringiz bormi? Biz bilan muloqotga tayyor
+            Savollaringiz bormi? Biz siz bilan muloqotga tayyormiz
           </p>
         </motion.div>
 
@@ -154,7 +154,7 @@ export default function Contact() {
             <div className="flex items-center gap-3 p-4 rounded-xl bg-green-500/8 border border-green-500/20">
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse shrink-0" />
               <p className="text-sm text-green-300">
-                O&apos;rtacha javob vaqti: <span className="font-semibold">15 daqiqa</span>
+                O&apos;rtacha javob vaqti: <span className="font-semibold">60 daqiqa</span>
               </p>
             </div>
           </motion.div>
