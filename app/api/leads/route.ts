@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
       : source ?? "Noma'lum";
 
     const message = [
-      "🆕 *Yangi ariza — GermanGo*",
+      "*Yangi ariza — GermanGo*",
       "",
       `👤 *Ism:* ${name}`,
       `📱 *Telefon:* ${phone}`,
