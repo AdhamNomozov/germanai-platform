@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { useState } from "react"
@@ -9,15 +10,15 @@ import { cn } from "@/src/lib/utils"
 const FAQS = [
   {
     q: "GermanGo nima va qanday ishlaydi?",
-    a: "GermanGo — sun'iy intellekt asosida qurilgan nemis tili o'qitish platformasi. Tizim sizning darajangizni aniqlab, shaxsiy o'quv reja tuzadi, interaktiv darslar, mock imtihonlar va real-time AI feedback bilan o'rganishni tezlashtiradi.",
+    a: "GermanGo — sun&apos;iy intellekt asosida qurilgan nemis tili o'qitish platformasi. Tizim sizning darajangizni aniqlab, shaxsiy o&apos;quv reja tuzadi, interaktiv darslar, mock imtihonlar va real-time AI feedback bilan o&apos;rganishni tezlashtiradi.",
   },
   {
-    q: "AI test natijalarini qayerda ko'raman?",
-    a: "Test yakunlanganidan so'ng natijalar darhol shaxsiy kabinetingizda ko'rsatiladi. Batafsil PDF hisobot ham avtomatik ravishda elektron pochta manzilingizga yuboriladi.",
+    q: "Test natijalarini qayerda ko'raman?",
+    a: "Test yakunlanganidan so'ng natijalar darhol shaxsiy kabinetingizda ko'rsatiladi. Batafsil PDF hisobot ham shaxsiy kabinetingizda saqlanadi.",
   },
   {
     q: "Kurslarga qanday yozilaman?",
-    a: "\"Kursni tanlash\" tugmasini bosib, to'lov amalga oshirilgach, kursga kirish darhol faollashadi. Barcha materiallar, darslar va AI mashqlar bir zumda mavjud bo'ladi.",
+    a: "\"Kursni tanlash\" tugmasini bosib, to'lov amalga oshirilgach, kursga kirish darhol faollashadi. Barcha materiallar, darslar va barcha mashqlar bir zumda mavjud bo&apos;ladi.",
   },
   {
     q: "To'lov usullari qanday?",

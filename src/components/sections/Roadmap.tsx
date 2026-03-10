@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { motion, useInView } from "framer-motion"
@@ -14,7 +15,7 @@ const STEPS = [
     color: "from-blue-400 to-blue-600",
     ring:  "ring-blue-500/30",
     label: "Diagnostika",
-    desc:  "AI quick-test orqali darajangizni aniqlang",
+    desc:  "Tezkor test orqali darajangizni aniqlang",
     sub:   "5 daqiqa · Bepul",
   },
   {
@@ -32,7 +33,7 @@ const STEPS = [
     color: "from-primary-400 to-primary-600",
     ring:  "ring-primary-500/30",
     label: "Reja",
-    desc:  "AI siz uchun shaxsiy yo'l xaritasi yaratadi",
+    desc:  "Tizim siz uchun shaxsiy yo&apos;l xaritasi yaratadi",
     sub:   "Avtomatik",
   },
   {

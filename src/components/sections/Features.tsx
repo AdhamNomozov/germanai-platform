@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { motion, useInView } from "framer-motion"
@@ -17,11 +18,11 @@ const FEATURES = [
     color:    "from-primary-400 to-primary-600",
     glow:     "rgba(245,158,11,0.15)",
     border:   "hover:border-primary-500/40",
-    tag:      "AI Texnologiya",
-    title:    "AI Test",
+    tag:      "Online Test",
+    title:    "Diagnostika Testi",
     subtitle: "Adaptiv imtihon tizimi",
-    desc:     "Nemis tilidan onlayn sinov — real imtihon formatida adaptiv savollar va AI tahlili bilan darajangizni aniq biling.",
-    bullets:  ["Real Goethe/TestDaF formati", "5,000+ savol bazasi", "Batafsil AI tahlil hisoboti"],
+    desc:     "Nemis tilidan onlayn sinov — real imtihon formatida adaptiv savollar va sun&apos;iy intellekt tahlili bilan darajangizni aniq biling.",
+    bullets:  ["Real Goethe/TestDaF formati", "5,000+ savol bazasi", "Batafsil natija hisoboti"],
     scrollId: "aitest",
   },
   {
@@ -31,10 +32,10 @@ const FEATURES = [
     glow:     "rgba(59,130,246,0.15)",
     border:   "hover:border-blue-500/40",
     tag:      "Shaxsiy yo'nalish",
-    title:    "AI Kurslar",
+    title:    "Onlayn Kurslar",
     subtitle: "A1 dan B2 gacha",
     desc:     "Sun'iy intellekt murabbiyi bilan interaktiv darslar va mashqlar — sizning sur'atingizda, sizning maqsadingiz uchun.",
-    bullets:  ["Har darsga AI feedback", "Speaking tahlili", "Grammatika avtokorreksiya"],
+    bullets:  ["Har darsga o&apos;qituvchi izohi", "Speaking tahlili", "Grammatika avtokorreksiya"],
     scrollId: "courses",
   },
   {
@@ -46,7 +47,7 @@ const FEATURES = [
     tag:      "Hayot yo'nalishi",
     title:    "Konsalting",
     subtitle: "Shaxsiy maslahat",
-    desc:     "Vizalar, o'qish va Germaniyada ish imkoniyatlari bo'yicha shaxsiy maslahatlar — maqsadingizga eng qisqa yo'l.",
+    desc:     "Vizalar, o'qish va Germaniyada ish imkoniyatlari bo'yicha shaxsiy maslahatlar — maqsadingizga eng qisqa yo&apos;l.",
     bullets:  ["Visa va emigratsiya", "Nemis universitetlari", "Mehnat bozori tahlili"],
     scrollId: "contact",
   },

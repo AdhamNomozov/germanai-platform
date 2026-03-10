@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { useState } from "react"
@@ -20,8 +21,8 @@ const CONTACT_ITEMS = [
   {
     icon:  Mail,
     label: "Email",
-    value: "info@germanai.uz",
-    href:  "mailto:info@germanai.uz",
+    value: "info@germango.uz",
+    href:  "mailto:info@germango.uz",
   },
   {
     icon:  MapPin,

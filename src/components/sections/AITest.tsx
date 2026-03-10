@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { useState } from "react"
@@ -53,7 +54,7 @@ export default function AITest({ onStartTest }: AITestProps) {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.1]">
               Darajangizni{" "}
               <span className="bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">
-                AI bilan aniqlang
+                Sun'iy intellekt bilan aniqlang
               </span>
             </h2>
 
@@ -160,12 +161,12 @@ export default function AITest({ onStartTest }: AITestProps) {
                   )}
                 >
                   <p className="text-xs font-semibold text-primary-400 mb-1.5">
-                    🤖 AI Feedback
+                    🤖 Sun'iy intellekt izohi
                   </p>
                   <p className="text-sm text-gray-300 leading-relaxed">
                     {done && answer
                       ? `"${answer}" — yaxshi urinish! "Ich heiße [ism]" yoki "Mein Name ist [ism]" to'liq javob bo'ladi.`
-                      : "Javobingizni yozib, AI tahlilini ko'ring…"}
+                      : "Javobingizni yozib, natijani ko&apos;ring…"}
                   </p>
                 </motion.div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { motion, useInView } from "framer-motion"
@@ -18,7 +19,7 @@ const COURSES: (CourseData & { popular?: boolean })[] = [
       "Asosiy grammatika",
       "Kundalik so'zlashuv",
       "Pronunciation mashqlari",
-      "AI mentor yordami",
+      "O'qituvchi yordami",
     ],
   },
   {
@@ -103,7 +104,7 @@ export default function Courses({ onSelectCourse }: CoursesProps) {
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Har bir daraja uchun maxsus ishlab chiqilgan, AI tomonidan moslashtirilgan o&apos;quv dasturlari
+            Har bir daraja uchun maxsus ishlab chiqilgan, sun&apos;iy intellekt yordamida moslashtirilgan o&apos;quv dasturlari
           </p>
         </motion.div>
 
