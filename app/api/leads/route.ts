@@ -34,7 +34,25 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Telegram xatosi" }, { status: 500 });
     }
 
-    return NextResponse.json({ success: true });
+  
+  // Google Sheets ga yuborish
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbzQxT3YkNgJn_S_PTIyu9tf4F_Nn0g3FQ07Wsux4ziatydVSUsdrhXDzx1QLYMiolbeCg/exec", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        vaqt: new Date().toLocaleString("uz-UZ", { timeZone: "Asia/Tashkent" }),
+        ism: name,
+        telefon: phone.replace(/[^0-9+]/g, ""),
+        manba: label || "",
+        maqsad: (({ study_germany: "Germaniyada o'qish", work_germany: "Germaniyada ishlash", certificate: "Sertifikat olish", general: "Umumiy o'rganish" } as Record<string, string>)[goal as string]) || goal || ""
+      })
+    })
+  } catch (e) {
+    console.error("Sheets error:", e)
+  }
+
+  return NextResponse.json({ success: true });
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: "Server xatosi" }, { status: 500 });
