@@ -281,7 +281,7 @@ export default function Hero({ onStartTest }: HeroProps) {
                 "text-primary-300 text-sm font-medium"
               )}>
                 <span>🇩🇪</span>
-                <span>#1 AI German Platform</span>
+                <span>Online German Platform</span>
                 <Star size={12} className="text-primary-400 fill-primary-400" />
               </div>
             </motion.div>
@@ -421,7 +421,7 @@ export default function Hero({ onStartTest }: HeroProps) {
               )}
             >
               <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-              Hozir 142 o&apos;quvchi online
+              Hozir 132 o&apos;quvchi online
             </motion.div>
           </div>
         </div>
